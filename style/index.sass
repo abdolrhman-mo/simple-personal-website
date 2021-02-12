@@ -1,0 +1,92 @@
+@import base
+
+$page_height: 100vh
+
+.my-container
+    display: grid
+    grid-template-columns: 1fr 3fr
+    grid-auto-rows: $page_height
+
+nav.side-nav
+    background: $primary_color
+    background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(0,102,255,1) 100%)
+    color: $secondary_color
+    position: fixed
+    height: 100vh
+    width: 18vw
+    overflow: hidden
+    display: grid
+    grid-auto-rows: 1fr 3fr 1.4fr
+    box-shadow: 4px 5px 15px 4px rgba(0,0,0,0.3)
+    padding: 30px
+    a
+        word-break: break-word
+        text-transform: capitalize
+        font-size: 15px
+    header
+        padding: 15px
+        padding-bottom: 0
+        text-align: left
+        h1 > a
+            font-size: 18px
+            color: $secondary_color
+        h3
+            margin: 10px 0 -10px
+            font-size: 90%
+            font-weight: 100
+            color: $primary_light
+    .elements
+        padding: 15px
+        display: grid
+        grid-template-columns: 1fr
+        grid-auto-rows: 30px
+    .social-media
+        position: relative
+        margin-left: 15px
+        a
+            text-transform: lowercase
+            padding: 5px 2px
+            &:first-of-type
+                display: block
+            > .fab
+                font-size: 1.8rem
+
+main
+    margin: 0px 10px
+    h1,
+    h2,
+    h3
+        color: $primary_color
+        margin: 8px 0
+        text-transform: capitalize
+    h4
+        margin: 10px 0 5px
+    .body-display
+        padding: 20px 30px
+        margin: 40px 0
+    hr
+        width: 98%
+        margin-top: 15px
+        margin-bottom: 10px
+
+@media screen and ( max-width: 900px  )
+    .blank
+        display: none
+    .my-container
+        grid-template-columns: 1fr
+        grid-auto-rows: auto
+    nav.side-nav
+        width: 80vw
+        color: $secondary_color
+        background: $primary_color
+        position: relative
+        .social-media
+            hr
+                display: none
+            a
+                font-size: 1.18rem
+                &:first-of-type::before
+                    content: "mail to: "
+
+                > .fab
+                    font-size: 2rem

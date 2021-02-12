@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap")
+
+// variabels
+$primary_color: #0066ff
+$primary_light: #bce4ff
+$primary_dark: #073e63
+$secondary_color: #fff
+
+// mixins
+=center-horizontal()
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+
+=center()
+    position: relative
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+// styling
+html
+    scroll-behavior: smooth
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: "poppins"
+
+a
+    color: $primary_color
+    text-decoration: none
+    transition: all 0.2s ease
+    &:hover
+        text-decoration: underline
+
+a.secondary
+    color: $secondary_color
+    text-decoration: none
+    transition: all 0.2s ease
+    &:hover
+        text-decoration: underline
+
+hr
+    width: 90%
+    margin: 20px auto
+    opacity: 0.3

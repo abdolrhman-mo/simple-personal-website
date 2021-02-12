@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins";
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.secondary {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+a.secondary:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 90%;
+  margin: 20px auto;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=base.css.map */
